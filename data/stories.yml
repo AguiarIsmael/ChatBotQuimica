@@ -1,0 +1,135 @@
+version: "2.0"
+
+stories:
+
+- story: pide ejercicio modulo 1
+  steps:
+  - intent: asignaEjercicios
+  - action: utter_asignaEjercicios
+  - intent: moduloUno
+  - action: utter_moduloUnoEj
+
+- story: pide ejercicio modulo 2
+  steps:
+  - intent: asignaEjercicios
+  - action: utter_asignaEjercicios
+  - intent: moduloDos
+  - action: utter_moduloDosEj  
+
+- story: pide ejercicio modulo 3
+  steps:
+  - intent: asignaEjercicios
+  - action: utter_asignaEjercicios
+  - intent: moduloTres
+  - action: utter_moduloTresEj
+
+- story: pide ejercicio modulo 4
+  steps:
+  - intent: asignaEjercicios
+  - action: utter_asignaEjercicios
+  - intent: moduloCuatro
+  - action: utter_moduloCuatroEj
+
+- story: pide ejemplo modulo
+  steps:
+  - intent: ejemplo
+  - action: utter_ejemplosModulo
+  - intent: modulo
+  - slot_was_set:
+    - nModulo: "1"
+  - action: action_ejemp
+
+- story: pide videos modulo 1
+  steps:
+  - intent: videosTeoria
+  - action: utter_videosModulo
+  - intent: moduloUno
+  - action: utter_moduloUnoVid
+
+- story: pide videos modulo 2
+  steps:
+  - intent: videosTeoria
+  - action: utter_videosModulo
+  - intent: moduloDos
+  - action: utter_moduloDosVid
+
+- story: pide videos modulo 3
+  steps:
+  - intent: videosTeoria
+  - action: utter_videosModulo
+  - intent: moduloTres
+  - action: utter_moduloTresVid
+
+- story: pide videos modulo 4
+  steps:
+  - intent: videosTeoria
+  - action: utter_videosModulo
+  - intent: moduloCuatro
+  - action: utter_moduloCuatroVid
+
+- story: mas ejemplos
+  steps:
+  - intent: masEjemplos
+  - action: utter_masEjemplos
+
+- story: saludo 1
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: emocionBien
+  - action: utter_emocionBien
+
+- story: saludo 2
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: emocionMal
+  - action: utter_emocionMal
+
+- story: tristeza confusion
+  steps:
+  - intent: emocionMal
+  - action: utter_emocionMal
+  - intent: tristezaConfusion
+  - action: utter_tristezaConfusion
+
+- story: tristeza confusion 2
+  steps:
+  - intent: tristezaConfusion
+  - action: utter_tristezaConfusion
+
+- story: tristeza despresion
+  steps:
+  - intent: emocionMal
+  - action: utter_emocionMal
+  - intent: tristezaDepresion
+  - action: utter_tristezaDepresion
+
+- story: tristeza despresion 2
+  steps:  
+  - intent: tristezaDepresion
+  - action: utter_tristezaDepresion
+  
+- story: enojo confusion
+  steps:
+  - intent: emocionEnojado
+  - action: utter_emocionEnojado
+  - intent: enojadoConfusion
+  - action: utter_enojadoConfusion
+
+- story: enojo confusion 2
+  steps:
+  - intent: tristezaDepresion
+  - action: utter_tristezaDepresion      
+
+- story: enojo problema
+  steps:
+  - intent: emocionEnojado
+  - action: utter_emocionEnojado
+  - intent: enojadoProblema
+  - action: utter_enojadoProblema
+
+- story: enojo problema 2
+  steps:
+  - intent: enojadoProblema
+  - action: utter_enojadoProblema  

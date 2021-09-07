@@ -1,0 +1,141 @@
+version: "2.0"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+  
+intents:
+  - asignaEjercicios
+  - emocionMal
+  - afirmativo
+  - ejemplo
+  - ejerciciosPracticos
+  - emocionBien
+  - emocionEnojado
+  - emocionConfundido
+  - finalizaEjercicio
+  - masEjemplos
+  - negativo
+  - saludo
+  - moduloUno
+  - moduloDos
+  - moduloTres
+  - moduloCuatro
+  - videosTeoria
+  - enojadoConfusion
+  - enojadoProblema
+  - tristezaConfusion
+  - tristezaDepresion
+  - modulo
+
+entities:
+  - nModulo 
+
+slots:
+  nModulo:
+    type: text
+    influence_conversation: true
+
+responses:
+  utter_asignaEjercicios:
+  - text: "Ejercicio de que modulo?"
+  - text: "De que modulo?"
+  - text: "Me indicas el modulo?"
+
+  utter_videosModulo:
+  - text: "Videos de que modulo?"
+  - text: "De que modulo?"
+  - text: "Me indicas el modulo?"
+
+  utter_ejemplosModulo:
+  - text: "Ejemplos de que modulo?"
+  - text: "De que modulo?"
+  - text: "Me indicas el modulo?"
+
+  utter_moduloUnoEj:
+  - text: "Estos ejercicios corresponden al modulo 1 http://www.exa.unicen.edu.ar/catedras/quimica/Quimica%20ISistemas/P1%20Sistemas.pdf"
+    
+  utter_moduloDosEj:
+  - text: "Estos ejercicios corresponden al modulo 2 http://www.exa.unicen.edu.ar/catedras/quimica/Quimica%20ISistemas/P2%20ISistemas.pdf"
+
+  utter_moduloTresEj:
+  - text: "Estos ejercicios corresponden al modulo 3 http://www.exa.unicen.edu.ar/catedras/quimica/Quimica%20ISistemas/P3%20%20ISistemas.pdf"
+
+  utter_moduloCuatroEj:
+  - text: "Estos ejercicios corresponden al modulo 4 http://www.exa.unicen.edu.ar/catedras/quimica/Quimica%20ISistemas/P4%20ISistemas.pdf"
+
+  utter_moduloUnoEjem:
+  - text: "Ejemplos del modulo 1 http://www.exa.unicen.edu.ar/catedras/quimica/Quimica%20ISistemas/Apunte1.pdf"
+
+  utter_moduloDosEjem:
+  - text: "Ejemplos del modulo 2 http://www.exa.unicen.edu.ar/catedras/quimica/Quimica%20ISistemas/Apunte2.pdf"
+
+  utter_moduloTresEjem: 
+  - text: "Ejemplos del modulo 3 http://www.exa.unicen.edu.ar/catedras/quimica/Quimica%20ISistemas/Apunte3_1.pdf http://www.exa.unicen.edu.ar/catedras/quimica/Quimica%20ISistemas/Apunte3_2.pdf"
+  
+  utter_moduloCuatroEjem:
+  - text: "Ejemplos del modulo 4 http://www.exa.unicen.edu.ar/catedras/quimica/Quimica%20ISistemas/Apunte%204.pdf"
+
+  utter_moduloUnoVid:
+  - text: "Videos del modulo 1 https://www.youtube.com/watch?v=YJ-XDj_KrHY, https://www.youtube.com/watch?v=P0hhIIKll58"
+
+  utter_moduloDosVid:
+  - text: "Videos del modulo 2 https://www.youtube.com/watch?v=WnVFcnGvJ-Y, https://www.youtube.com/watch?v=7fvhN3tyzeM"
+
+  utter_moduloTresVid:
+  - text: "Videos del modulo 3 https://www.youtube.com/watch?v=FrfRSiDGVjA, https://www.youtube.com/watch?v=Z29YdlyJ5K0"
+
+  utter_moduloCuatroVid:
+  - text: "Videos del modulo 4 https://www.youtube.com/watch?v=4pvBPfxoFsA, https://www.youtube.com/watch?v=Rhbs8z6sd-A"
+
+  utter_afirmativo:
+  - text: "Perfecto"
+
+  utter_emocionBien:
+  - text: "Me alegro que estes bien."
+
+  utter_emocionEnojado:
+  - text: "Decime, por que estas enojado?"
+
+  utter_emocionConfundido:
+  - text: "Con que puedo ayudarte?"
+
+  utter_emocionMal:
+  - text: "Por que estas mal?" 
+
+  utter_finalizaEjercicio:
+  - text: "Perfecto"
+
+  utter_masEjemplos:
+  - text: "Para obtener mas ejemplos o ejercicios resuelto te invito a visitar la pagina de la catedra"
+
+  utter_negativo:
+  - text: "Esta bien, que puedo ofrecerte?"
+
+  utter_saludo:
+  - text: "Hola, soy Dana Scully, en que te puedo ayudar?"
+  - text: "Hola, soy Dana Scully tu ayudante de quimica, que necesitas?"
+  - text: "Hola, como andas?"
+
+  utter_tristezaConfusion:
+  - text: "Puedo Ayudarte con material de la catedra, solo tenes que pedirlo"
+  - text: "Si me lo pedis puedo ofrecerte material de la catedra"
+  - text: "Estoy para ayudarte, solo pedime lo que necesites"
+
+  utter_tristezaDepresion: 
+  - text: "Bien, este es el numero del Departamento de Salud de la universidad (0249) 4421891/92 te van a ayudar con cualquier problema que tengas"
+  - text: "Bien, este es el numero de la secretaria de Bienestar Estudiantil (0249) 4385510 te van a ayudar con cualquier problema que tengas"
+
+  utter_enojadoConfusion:
+  - text: "Puedo Ayudarte con material de la catedra, solo tenes que pedirlo"
+  - text: "Si me lo pedis puedo ofrecerte material de la catedra"
+  - text: "Estoy para ayudarte, solo pedime lo que necesites"
+
+  utter_enojadoProblema:
+  - text: "Puedo cambiarte de catedra si lo deseas"
+  - text: "Te voy a cambiar de catedra, si asi lo deseas"
+  - text: "En otra catedra te entirias mejor"
+
+actions:
+  - action_ejemp
+

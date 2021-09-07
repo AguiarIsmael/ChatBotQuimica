@@ -1,0 +1,9 @@
+version: "2.0"
+
+rules:
+
+- rule: Asigna ejercicicios cada vez que el usuario pide
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+

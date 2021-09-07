@@ -1,0 +1,194 @@
+version: "2.0"
+
+nlu:
+- intent: afirmativo
+  examples: |
+    - dale
+    - si
+    - sip
+    - is
+    - por favor
+    - dale
+    - si dale
+    - si por favor
+    - s
+
+- intent: asignaEjercicios
+  examples: |
+    - asigname ejercicios
+    - asigname ejercicios del modulo 3
+    - me asignas algún ejercicio?
+    - me asignas ejercicios
+    - Me asignas nuevos ejercicios?
+    - que debo resolver?
+    - quiero ejercicios
+    - quiero nuevos ejercicios
+    - quiero resolver ejercicios
+    - realizar ejercicios
+    - tarea
+    - tengo tarea
+
+- intent: ejemplo
+  examples: |
+    - ejemplo?
+    - ejemplos?
+    - me das ejemplos?
+    - por ejemplo?
+    - Quiero un ejemplo
+    - ejercicios resueltos
+    - ejercicios ejemplo
+    - ejemplos
+    - ejercicios hechos
+    - tenes ejemplos del modulo?
+    - tenes ejemplos?
+
+- intent: ejerciciosPracticos
+  examples: |
+    - ejercicios
+    - ejercicios sin resolver
+    - la practica del modulo
+    - los ejercicios
+    - para practicar
+    - para resolver
+    - practicar
+    - practico
+    - problemas
+    - y la practica
+    - y los ejercicios
+
+- intent: emocionMal
+  examples: |
+    - mal
+    - Estoy triste
+    - bajon
+    - triste
+    - decaido
+
+- intent: tristezaDepresion
+  examples: |
+   - Estoy deprimido
+   - Estoy mal
+   - Estoy muy mal
+   - Muy mal
+   - Necesito ayuda
+
+- intent: emocionBien
+  examples: |
+    - bien
+    - estoy bien
+    - estoy muy mal
+    - estoy feliz
+    - feliz
+    - muy bien
+    - excelente
+    - de diez
+    - de 10
+    - como un rey
+    - increible 
+
+- intent: emocionEnojado
+  examples: |
+    - enojado
+    - estoy enojado
+    - estoy furioso
+    - furioso
+    - muy furioso
+    - con ira
+    - molesto
+    - con furia
+    - estoy sacado
+
+- intent: emocionConfundido
+  examples: |
+    - confundido
+    - estoy confundido
+    - no comprendo
+    - no entiendo
+    - me cuesta entender
+    - no puedo entenderlo
+    - me confunde
+    - no lo entiendo
+    - no lo comprendo
+
+- intent: finalizaEjercicio
+  examples: |
+    - ya finalice mis ejercicios
+    - ya no tengo que resolver
+    - ya termine
+    - ya termine los ejercicios asignados
+    - ya termine mis ejercicios
+
+- intent: masEjemplos
+  examples: |
+    - algun ejemplo mas?
+    - mas ejemplos
+    - mas ejemplos no tenes?
+    - necesito otros ejemplos
+    - no tenes algun otro ejemplo?
+
+- intent: negativo
+  examples: |
+    - no
+    - nop 
+    - no es necesario
+    - no hace falta
+    - otra cosa
+    - prefiero otra cosa
+
+- intent: saludo
+  examples: |
+    - buenas  
+    - buen dia
+    - buenas noches
+    - Buenas tardes
+    - hola
+    - saludos
+
+- intent: videosTeoria
+  examples: |
+    - Algún video teórico?
+    - La teoría
+    - Tenes videos de teoria
+    - teoria
+    - teoria del modulo
+    - teoricos
+    - videos del modulo
+    - videos teoricos
+
+- intent: modulo
+  examples: |
+    - modulo [1]{"entity":"nModulo"}
+    - estoy en el modulo [2]{"entity":"nModulo"}
+    - me encuentro en el modulo [3]{"entity":"nModulo"}
+    - en el modulo [4]{"entity":"nModulo"}
+  
+    
+- intent: enojadoConfusion
+  examples: |
+    - Estoy confundido
+    - No me sale
+    - No entiendo
+    - No comprendo
+    - Confusion
+    - Estoy perdido
+    - Estoy desorientado
+
+
+- intent: enojadoProblema
+  examples: |
+    - No le entiendo al profesor 
+    - Discuti con un compañero
+    - Mis compañeros no me ayudan
+    - Tengo problemas con el profesor
+    - Tengo problemas con un alumno
+
+- intent: tristezaConfusion
+  examples: |
+    - Estoy confundido
+    - No me sale
+    - No entiendo
+    - No comprendo
+    - Confusion
+    - Estoy perdido
+    - Estoy desorientado
+  
